@@ -1,0 +1,8 @@
+<h1>Successfully created song.</h1>
+<h2><%= @song.name %> by <%= @song.artist.name %></h2>
+<h2>Genres:</h2>
+<ul>
+  <% @song.genres.each do |genre| %>
+  <li><%= genre.name %></li>
+  <% end %>
+</ul>
